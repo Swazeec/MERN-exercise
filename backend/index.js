@@ -24,8 +24,7 @@ app.use(
 
 
 app.get('/', (req, res) => {
-    console.log(req)
-    return res.status(234).send('Welcome')
+    return res.status(200).send('Welcome')
 })
 
 app.use('/books', booksRoute)
